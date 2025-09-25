@@ -42,7 +42,7 @@ Hell0_Web/
 ```
 
 ## Planned Commit History
-- [ ] feat(solution): create Hell0_Web solution and web project
+- [x] feat(solution): create Hell0_Web solution and web project
 - [ ] feat(tests): create Hell0_Web.Tests project with xUnit
 - [ ] feat(core): add AsciiInputModel for user input validation
 - [ ] feat(controller): scaffold AsciiController with action for input form
