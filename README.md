@@ -43,8 +43,8 @@ Hell0_Web/
 
 ## Planned Commit History
 - [x] feat(solution): create Hell0_Web solution and web project
-- [ ] feat(tests): create Hell0_Web.Tests project with xUnit
-- [ ] feat(core): add AsciiInputModel for user input validation
+- [x] feat(tests): create Hell0_Web.Tests project with xUnit
+- [x] feat(core): add AsciiInputModel for user input validation
 - [ ] feat(controller): scaffold AsciiController with action for input form
 - [ ] test(controller): add unit tests for AsciiController input handling
 - [ ] feat(view): add Home/Index.cshtml with text box and Go button
