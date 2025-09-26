@@ -28,7 +28,7 @@ namespace Hell0_Web.Tests
         [Fact]
         public void Should_Fail_When_UserInput_Exceeds_MaxLength()
         {
-            var model = new AsciiInputModel { UserInput = new string('a', 101) };
+            var model = new AsciiInputModel { UserInput = new string('a', 201) };
 
             var results = ValidateModel(model);
 
