@@ -28,11 +28,10 @@ namespace Hell0_Web.Tests
         [Fact]
         public void Should_Fail_When_UserInput_Exceeds_MaxLength()
         {
-            var model = new AsciiInputModel { UserInput = new string('a', 201) };
-
+            var model = new AsciiInputModel { UserInput = new string('a', AsciiInputModel.MaxLength + 1) };
             var results = ValidateModel(model);
 
-            Assert.Contains(results, r => r.ErrorMessage == "Input cannot exceed 100 characters.");
+            Assert.Contains(results, r => r.ErrorMessage == $"Input cannot exceed {AsciiInputModel.MaxLength} characters.");
         }
 
         [Fact]
