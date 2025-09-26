@@ -7,7 +7,7 @@ namespace Hell0_Web.Tests
 {
     public class AsciiInputModelTests
     {
-        private List<ValidationResult> ValidateModel(AsciiInputModel model)
+        private static List<ValidationResult> ValidateModel(AsciiInputModel model)
         {
             var context = new ValidationContext(model, null, null);
             var results = new List<ValidationResult>();
