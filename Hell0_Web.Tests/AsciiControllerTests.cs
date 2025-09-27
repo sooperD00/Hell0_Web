@@ -1,14 +1,11 @@
 ﻿using Hell0_Web.Models;
+using Hell0_Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Xunit;
 
 namespace Hell0_Web.Tests
 {
-    internal class AsciiControllerTests
+    public class AsciiControllerTests
     {
         [Fact]
         public void Input_Get_ReturnsViewWithAsciiInputModel()
