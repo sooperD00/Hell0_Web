@@ -30,12 +30,15 @@ Hell0_Web/
 │ ├── Views/
 │ │ └── Home/Index.cshtml
 │ ├── wwwroot/css/
-│ ├── Models/AsciiInputModel.cs
+│ ├── Models/
+│ │ └── AsciiInputModel.cs
+| │ └── MaxLengthAttribute.cs
 │ ├── Program.cs
 │ └── Hell0_Web.csproj
 │
 ├── Hell0_Web.Tests/
 │ ├── AsciiControllerTests.cs
+│ ├── AsciiInputModelTests.cs
 │ └── Hell0_Web.Tests.csproj
 │
 └── README.md
@@ -45,7 +48,7 @@ Hell0_Web/
 - [x] feat(solution): create Hell0_Web solution and web project
 - [x] feat(tests): create Hell0_Web.Tests project with xUnit
 - [x] feat(core): add AsciiInputModel for user input validation
-- [ ] feat(controller): scaffold AsciiController with action for input form
+- [x] feat(controller): scaffold AsciiController with action for input form
 - [ ] test(controller): add unit tests for AsciiController input handling
 - [ ] feat(view): add Home/Index.cshtml with text box and Go button
 - [ ] feat(core): integrate Hell0_TDD NuGet package for ASCII rendering
