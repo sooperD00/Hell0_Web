@@ -1,5 +1,6 @@
 ﻿using Hell0_Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using Hell0_TDD.Core;
 
 namespace Hell0_Web.Controllers
 {
@@ -14,21 +15,14 @@ namespace Hell0_Web.Controllers
             return View(new AsciiInputModel { UserInput = "" }); // satisfies 'required'
         }
 
-        // POST: /Ascii/Input
-       /*[HttpPost]
+        [HttpPost]
         public IActionResult Input(AsciiInputModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
 
-            // For now, just return the model to the same view
-            return View(model);
-        }*/
-
-        [HttpPost]
-        public IActionResult Input(AsciiInputModel model)
-        {
-            ViewData["AsciiOutput"] = model.UserInput;
+            // Use Hell0_TDD.Core to render ASCII art
+            ViewData["AsciiOutput"] = Hell0_TDD.Core.AsciiRenderer.RenderAscii(model.UserInput);
             return View(model);
         }
     }
