@@ -3,11 +3,11 @@
 Hell0_Web is a C# front-end web UI where users can input text into a form, click "Go", and see the Figgle ASCII art rendering of their input displayed below.
 
 ## Goals
-- [ ] Showcase front-end web UI development in C#
-- [ ] Demonstrate TDD for backend logic and integration
-- [ ] Maintain clean separation of controller, model, and view
-- [ ] Create a simple, readable, maintainable, and professional codebase
-- [ ] Display Figgle ASCII art output dynamically in a web page
+- [x] Showcase front-end web UI development in C#
+- [x] Demonstrate TDD for backend logic and integration
+- [x] Maintain clean separation of controller, model, and view
+- [x] Create a simple, readable, maintainable, and professional codebase
+- [x] Display Figgle ASCII art output dynamically in a web page
 - [ ] (Stretch goal) add one client-side feature (AJAX to render ASCII without full reload)
 - [ ] (Stretch goal) add font selection buttons
 - [ ] Deploy to a live URL for easy testing and portfolio sharing
@@ -49,17 +49,19 @@ Hell0_Web/
 - [x] feat(tests): create Hell0_Web.Tests project with xUnit
 - [x] feat(core): add AsciiInputModel for user input validation
 - [x] feat(controller): scaffold AsciiController with action for input form
-- [ ] test(controller): add unit tests for AsciiController input handling
-- [ ] feat(view): add Home/Index.cshtml with text box and Go button
-- [ ] feat(core): integrate Hell0_TDD NuGet package for ASCII rendering
-- [ ] test(controller): add tests for ASCII rendering output using NuGet
-- [ ] feat(view): display ASCII output under input box
-- [ ] feat(core): add optional font selection support
-- [ ] test(controller): add tests for font selection input
+- [x] test(controller): add unit tests for AsciiController input handling
+- [x] feat(view): add Ascii/Input.cshtml with text box and Go button
+- [x] feat(core): integrate Hell0_TDD NuGet package for ASCII rendering
+- [x] test(controller): add tests for ASCII rendering output using NuGet
+- [x] feat(view): display ASCII output under input box
+- [ ] fix(routing): make /Ascii/Input the default homepage
 - [ ] chore: add basic CSS styling for readability
-- [ ] feat(integration): add minimal integration test for controller + view
-- [ ] feat(frontend): add optional JavaScript/AJAX to fetch ASCII output without full page reload
+- [ ] feat(core): add optional font selection support (stretch)
+- [ ] test(controller): add tests for font selection input (stretch)
+- [ ] feat(frontend): add optional JavaScript/AJAX (stretch)
+- [ ] feat(integration): add minimal integration test (stretch - optional for portfolio)
 - [ ] docs: update README with instructions and demo screenshot
+- [ ] chore: deploy to Azure (stretch)
 
 ## Usage
 1. Open the live app URL in your browser.
