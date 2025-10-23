@@ -1,22 +1,87 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* ASCII Art Generator Styles */
 body {
-  margin-bottom: 60px;
+    background-color: #0a0a0a; /* deep black */
+    color: #c0c0c0; /* dead channel gray */
+}
+
+.ascii-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1a1a1a; /* rain-slick black */
+    border: 1px solid #00ffff; /* electric cyan */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* neon glow */
+}
+
+    .ascii-container h2 {
+        margin-bottom: 10px;
+        color: #00ffff; /* electric cyan */
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        font-family: 'Courier New', monospace;
+    }
+
+    .ascii-container .lead {
+        color: #8888aa; /* muted electric blue */
+        margin-bottom: 30px;
+    }
+
+        .ascii-container .lead small {
+            color: #666677;
+        }
+
+    .ascii-container input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: #0d0d0d;
+        border: 1px solid #ff00ff; /* electric purple */
+        color: #00ff00; /* acidic green */
+        font-family: 'Courier New', monospace;
+    }
+
+        .ascii-container input[type="text"]:focus {
+            outline: none;
+            border-color: #00ffff;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+    .ascii-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ff0066; /* blood red */
+        border: 1px solid #ff0066;
+        color: #ffffff;
+        font-family: 'Courier New', monospace;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+        .ascii-container button:hover {
+            background-color: #cc0052;
+            box-shadow: 0 0 15px rgba(255, 0, 102, 0.6);
+        }
+
+.ascii-output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #0a0a0a; /* deep black */
+    border: 1px solid #9d00ff; /* electric purple */
+    box-shadow: 0 0 15px rgba(157, 0, 255, 0.3);
+    overflow-x: auto;
+}
+
+    .ascii-output pre {
+        margin: 0;
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #00ff00; /* acidic green - matrix vibes */
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+
+.text-danger {
+    color: #ff0066 !important; /* blood red for errors */
 }

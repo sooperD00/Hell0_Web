@@ -1,16 +1,22 @@
 @model Hell0_Web.Models.AsciiInputModel
+<div class="ascii-container">
+    <h2>Hell0_Web!!!</h2>
+    <p class="lead text-muted">
+        Because console cowboys still need ASCII art.
+        <br>
+        <small>A portfolio demo featuring C#, ASP.NET Core, TDD, and a custom NuGet package. No ice required.</small>
+    </p>
 
-<h2>ASCII Art Generator</h2>
+    <form asp-action="Input" method="post">
+        <input asp-for="UserInput" class="form-control" placeholder="Enter text here..." />
+        <span asp-validation-for="UserInput" class="text-danger"></span>
+        <button type="submit" class="btn btn-primary mt-2">Go</button>
+    </form>
 
-<form asp-action="Input" method="post">
-    <label asp-for="UserInput">Enter text:</label>
-    <input asp-for="UserInput" class="form-control" />
-    <span asp-validation-for="UserInput" class="text-danger"></span>
-
-    <button type="submit" class="btn btn-primary mt-2">Go</button>
-</form>
-
-@if (ViewData["AsciiOutput"] != null)
-{
-    <pre>@ViewData["AsciiOutput"]</pre>
-}
+    @if (ViewData["AsciiOutput"] != null)
+    {
+        <div class="ascii-output">
+            <pre>@ViewData["AsciiOutput"]</pre>
+        </div>
+    }
+</div>
