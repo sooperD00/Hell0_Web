@@ -5,7 +5,7 @@
 
 A full-stack C# web application that converts user input into ASCII art using a custom NuGet package. Built with ASP.NET Core MVC, test-driven development, and deployed to Azure.
 
-![Screenshot](screenshot.png) *(add screenshot later if time)*
+![Screenshot](screenshot.png)
 
 ---
 

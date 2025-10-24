@@ -15,6 +15,13 @@ namespace Hell0_Web.Controllers
             return View(new AsciiInputModel { UserInput = "" }); // satisfies 'required'
         }
 
+        // GET: /Ascii/Privacy
+        [HttpGet]
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Input(AsciiInputModel model)
         {
