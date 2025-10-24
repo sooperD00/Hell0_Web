@@ -147,7 +147,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 Built by **Nicole Rowsey** as a portfolio demonstration project.  
 *Part of a series showcasing C# development skills - see also: [Hell0_TDD.Core NuGet package](https://github.com/sooperD00/Hell0_TDD)*
 
-**Connect:** [GitHub](https://github.com/sooperD00) | [LinkedIn](#) *(add your LinkedIn)*
+**Connect:** [GitHub](https://github.com/sooperD00) | [LinkedIn](https://www.linkedin.com/in/nicole-rowsey)
 
 ---
 
