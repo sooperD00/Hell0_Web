@@ -26,10 +26,10 @@ A full-stack C# web application that converts user input into ASCII art using a 
 - Created and published custom NuGet package ([Hell0_TDD.Core](https://www.nuget.org/packages/Hell0_TDD.Core/))
 - Integrated third-party dependencies (Figgle ASCII rendering library)
 
-**Cloud Deployment:**
+**Cloud Deployment & CI/CD:**
 - Azure App Service hosting
-- Production environment configuration
-- Scalable architecture ready for CI/CD integration
+- GitHub Actions workflow: push to main triggers build → test → deploy
+- Automated quality gate (tests must pass before deployment)
 
 **Professional Development Practices:**
 - Clean Git history with conventional commit messages
@@ -130,7 +130,6 @@ Inspired by William Gibson's *Neuromancer*, the UI features:
 
 - [ ] Font selection dropdown (integrate multiple Figgle fonts)
 - [ ] AJAX rendering (update output without page reload)
-- [ ] GitHub Actions CI/CD pipeline
 - [ ] Integration tests for full request/response cycle
 - [ ] Export ASCII art as image file
 
