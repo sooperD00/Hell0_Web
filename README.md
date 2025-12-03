@@ -3,7 +3,7 @@
 **Live Demo:** [hell0-web-nicole-rowsey.azurewebsites.net](https://hell0-web-nicole-rowsey-hngadebad5dyhfcj.canadacentral-01.azurewebsites.net/)  
 *(Free tier hosting - first load takes ~15 seconds to wake up)*
 
-A full-stack C# web application that converts user input into ASCII art using a custom NuGet package. Built with ASP.NET Core MVC, test-driven development, and deployed to Azure.
+A full-stack C# web application that converts user input into ASCII art using a custom NuGet package. Built with ASP.NET Core MVC, test-driven development, and deployed to Azure with GitHub Actions CI/CD workflow.
 
 ![Screenshot](screenshot.png)
 
