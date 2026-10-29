@@ -8,10 +8,8 @@ namespace Hell0_Web.Models
         public const int MaxLength = 200;
 
         [Required(ErrorMessage = "Please enter some text.")]
-        [MaxLength(MaxLength)]
+        // Built-in attribute: {1} is filled in with the max length
+        [MaxLength(MaxLength, ErrorMessage = "Input cannot exceed {1} characters.")]
         public required string UserInput { get; set; }
-
-        // Optional: font selection for future stretch goal
-        public string Font { get; set; } = "Standard";
     }
 }
