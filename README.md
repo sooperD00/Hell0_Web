@@ -1,9 +1,11 @@
 # Hell0_Web - ASCII Art Generator
 
+**The Hell0 series:** [Hello_W0rld](https://github.com/sooperD00/Hello_W0rld) (console app) → [Hell0_TDD](https://github.com/sooperD00/Hell0_TDD) (tested library on NuGet) → **Hell0_Web** (web app + CI/CD) → [Hello_Eliza](https://github.com/sooperD00/Hello_Eliza) (what it grew into)
+
 **Live Demo:** [hell0-web-nicole-rowsey.azurewebsites.net](https://hell0-web-nicole-rowsey-hngadebad5dyhfcj.canadacentral-01.azurewebsites.net/)  
 *(Free tier hosting - first load takes ~15 seconds to wake up)*
 
-A full-stack C# web application that converts user input into ASCII art using a custom NuGet package. Built with ASP.NET Core MVC, test-driven development, and deployed to Azure with GitHub Actions CI/CD workflow.
+A one-form C# web app that turns text into ASCII art using a custom NuGet package. The app is small on purpose. The point is the pipeline: ASP.NET Core MVC built test-first, deployed to Azure by a GitHub Actions workflow that won't deploy unless the tests pass.
 
 ![Screenshot](screenshot.png)
 
@@ -11,15 +13,14 @@ A full-stack C# web application that converts user input into ASCII art using a 
 
 ## 🎯 What This Demonstrates
 
-**Full-Stack Web Development:**
+**Web App:**
 - ASP.NET Core 8.0 MVC architecture with Razor views
-- RESTful routing and controller design
+- Controller design: GET serves the form, POST validates and renders
 - Model validation and error handling
 - Responsive UI with custom CSS (cyberpunk aesthetic inspired by Neuromancer)
 
 **Test-Driven Development:**
-- xUnit test suite with 90%+ code coverage
-- Unit tests for controllers and models
+- xUnit tests for the controller and the input model
 - Red-Green-Refactor workflow visible in Git history
 
 **Package Management & Distribution:**
@@ -30,11 +31,11 @@ A full-stack C# web application that converts user input into ASCII art using a 
 - Azure App Service hosting
 - GitHub Actions workflow: push to main triggers build → test → deploy
 - Automated quality gate (tests must pass before deployment)
+- Pull requests run the same build and tests, without deploying
 
 **Professional Development Practices:**
 - Clean Git history with conventional commit messages
 - Separation of concerns (MVC pattern)
-- Comprehensive documentation
 
 ---
 
@@ -82,8 +83,7 @@ Hell0_Web/
 │   ├── Controllers/
 │   │   └── AsciiController.cs  # Handles form submission & rendering
 │   ├── Models/
-│   │   ├── AsciiInputModel.cs  # Input validation model
-│   │   └── MaxLengthAttribute.cs # Custom validation attribute
+│   │   └── AsciiInputModel.cs  # Input validation model
 │   ├── Views/
 │   │   └── Ascii/Input.cshtml  # UI with form and output display
 │   └── wwwroot/css/
@@ -100,7 +100,7 @@ Hell0_Web/
 
 ## 🧪 Test-Driven Development Approach
 
-This project follows strict TDD principles:
+This project follows the TDD cycle:
 1. **RED:** Write failing test first
 2. **GREEN:** Write minimal code to pass
 3. **REFACTOR:** Clean up while keeping tests green
